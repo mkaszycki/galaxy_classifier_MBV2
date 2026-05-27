@@ -12,16 +12,15 @@ i douczana na 6000 zdjęciach galaktyk pobranych z katalogu SDSS (Sloan Digital 
 
 ## Struktura projektu
 
-​
-├── backend/
-│   ├── main.py                    # API FastAPI — klasyfikacja + Grad-CAM
-│   └── najlepszy_MobileNetV2.pth  # wagi wytrenowanego modelu
-├── frontend/
-│   └── app.py                     # interfejs użytkownika (Gradio)
-├── notebooks/
-│   └── SDSS_Pipeline.ipynb        # pobieranie danych, augmentacja, trening
-├── requirements.txt
-└── Dockerfile
+- backend/
+   `main.py — API FastAPI, klasyfikacja + Grad-CAM
+  - najlepszy_MobileNetV2.pth — wagi wytrenowanego modelu
+- frontend/
+  - app.py — interfejs użytkownika (Gradio)
+- notebooks/
+  - SDSS_Pipeline.ipynb — pobieranie danych, augmentacja, trening
+- requirements.txt
+- Dockerfile
 ​
 
 ## Dataset
@@ -35,7 +34,7 @@ i douczana na 6000 zdjęciach galaktyk pobranych z katalogu SDSS (Sloan Digital 
 
 ​
 MobileNetV2 (pretrained ImageNet)
-    └── classifier[1]: Linear(1280 → 2)
+    -classifier[1]: Linear(1280 → 2)
 ​
 
 ## Trening
