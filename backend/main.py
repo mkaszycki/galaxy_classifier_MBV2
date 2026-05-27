@@ -20,7 +20,7 @@ print("Uruchamiam silnik i ładuje wagi modelu")
 mobilenet = models.mobilenet_v2(weights=None)
 mobilenet.classifier[1] = nn.Linear(mobilenet.classifier[1].in_features, 2)
 
-mobilenet.load_state_dict(torch.load("notebooks/najlepszy_MobileNetV2.pth", map_location=urzadzenie))
+mobilenet.load_state_dict(torch.load("backend/najlepszy_MobileNetV2.pth", map_location=torch.device('cpu')))
 mobilenet.eval() #blokada nauki
 
 # grad_cam
