@@ -1,7 +1,7 @@
 # Galaxy Classifier MBV2
 
 Aplikacja webowa do klasyfikacji galaktyk przy użyciu sieci neuronowej MobileNetV2.
-Prześlij zdjęcie galaktyki, a model oceni czy jest spiralna czy eliptyczna — wraz z mapą ciepła Grad-CAM pokazującą na co sieć zwróciła uwagę.
+Prześlij zdjęcie galaktyki, a model oceni czy jest spiralna czy eliptyczna - wraz z mapą ciepła Grad-CAM pokazującą na co sieć zwróciła uwagę.
 
 ## Jak to działa
 
@@ -13,12 +13,12 @@ i douczana na 6000 zdjęciach galaktyk pobranych z katalogu SDSS (Sloan Digital 
 ## Struktura projektu
 
 - backend/
-   `main.py — API FastAPI, klasyfikacja + Grad-CAM
+   `main.py - API FastAPI, klasyfikacja + Grad-CAM
   - najlepszy_MobileNetV2.pth — wagi wytrenowanego modelu
 - frontend/
-  - app.py — interfejs użytkownika (Gradio)
+  - app.py - interfejs użytkownika (Gradio)
 - notebooks/
-  - SDSS_Pipeline.ipynb — pobieranie danych, augmentacja, trening
+  - SDSS_Pipeline.ipynb - pobieranie danych, augmentacja, trening
 - requirements.txt
 - Dockerfile
 ​
